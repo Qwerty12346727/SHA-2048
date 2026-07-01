@@ -24,6 +24,13 @@ pkg install clang
 clang++ -O3 -pthread main.cpp -o sha2048
 cp sha2048 $PREFIX/bin/
 ```
-Done! You should now be able to use it.
+Done! You should now be able to use it. 
+---
+try this out:
+```termux code
+sha2048 README.md
+sha2048 --checksum README.md main.cpp
+```
+
 
 
