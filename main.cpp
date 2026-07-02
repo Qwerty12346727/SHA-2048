@@ -14,9 +14,6 @@ int main(int argc, char* argv[]) {
 
     std::string primary_mode = argv[1];
 
-    // ==========================================
-    // ROUTE A: Dual-File Checksum Verification
-    // ==========================================
     if (primary_mode == "--checksum") {
         if (argc < 4) {
             std::cerr << "Error: Checksum execution requires two distinct file path arguments.\n"
@@ -54,9 +51,7 @@ int main(int argc, char* argv[]) {
         return 0;
     }
 
-    // ==========================================
-    // ROUTE B: Normal Mode (Your Exact OG Output)
-    // ==========================================
+    
     std::string target_file = primary_mode;
     std::string hash_out = compute_sha2048(target_file, false);
 
